@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Detalle de Ingreso - InfraTel Chile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    .detalle-container {
+      background: #fff;
+      max-width: 700px;
+      margin: 40px auto 0 auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px #0001;
+      padding: 32px 32px 24px 32px;
+    }
+    .detalle-title {
+      font-size: 1.3rem;
+      color: #06598c;
+      font-weight: bold;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+    .btns-centrados {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      margin-top: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img class="logo" src="./assets/telecom-report-site/public/images/infratelchile_logo.png" alt="Logo InfraTel Chile">
+    <span class="brand">App Telecomunicaciones</span>
+  </div>
+  <div style="text-align:right; margin: 24px 32px 0 0;">
+    <button class="login-btn" onclick="window.location.href='main.html'">Menú Principal</button>
+  </div>
+  <div class="detalle-container">
+    <div class="detalle-title">Detalle de Ingreso</div>
+    <!-- Aquí muestra los datos del ingreso guardado -->
+    <div class="input-group">
+      <label class="input-label">Site ID:</label>
+      <span id="detalleSiteId">Ejemplo123</span>
+    </div>
+    <div class="input-group">
+      <label class="input-label">Fecha de Inicio:</label>
+      <span id="detalleFechaInicio">2024-05-20</span>
+    </div>
+    <!-- Agrega más campos según tu necesidad -->
+    <div class="btns-centrados">
+      <button class="login-btn" onclick="window.location.href='reportefinaldía.html'">Finalizar y Ver Reporte Final del Día</button>
+    </div>
+  </div>
+  <div class="footer">
+    ©2024 InfraTel Chile. Todos los derechos reservados.
+  </div>
+</body>
+</html>
