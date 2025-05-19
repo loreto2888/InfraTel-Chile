@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reporte Final del Día - InfraTel Chile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    .final-container {
+      background: #fff;
+      max-width: 950px;
+      margin: 40px auto 0 auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px #0001;
+      padding: 32px 32px 24px 32px;
+    }
+    .final-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #06598c;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+    .final-section {
+      margin-bottom: 24px;
+    }
+    .final-section-title {
+      color: #007399;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    .final-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 18px;
+      background: #fff;
+    }
+    .final-table th, .final-table td {
+      border: 1px solid #e0e0e0;
+      padding: 8px 10px;
+      text-align: left;
+      font-size: 0.98rem;
+    }
+    .final-table th {
+      background: #f3f6fa;
+      color: #06598c;
+      font-weight: bold;
+    }
+    .final-table tr:hover { background: #f7fafd; }
+    .final-observaciones {
+      margin-top: 18px;
+    }
+    .final-observaciones label {
+      font-weight: bold;
+      color: #06598c;
+      margin-bottom: 4px;
+      display: block;
+    }
+    .final-observaciones textarea {
+      width: 100%;
+      min-height: 60px;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      padding: 8px;
+      font-size: 1rem;
+      background: #fafbfc;
+      resize: vertical;
+    }
+    .final-btns {
+      text-align: right;
+      margin-top: 24px;
+    }
+    .final-btn {
+      background: #06598c;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      padding: 12px 28px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      margin-left: 12px;
+    }
+    @media (max-width: 900px) {
+      .final-container { padding: 18px 6px 18px 6px; }
+      .final-btn { width: 100%; margin: 12px 0 0 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img class="logo" src="./assets/telecom-report-site/public/images/infratelchile_logo.png" alt="Logo InfraTel Chile">
+    <span class="brand">App Telecomunicaciones</span>
+  </div>
+  <div style="text-align:right; margin: 24px 32px 0 0;">
+    <button class="login-btn" onclick="window.location.href='main.html'">Menú Principal</button>
+  </div>
+  <div class="final-container">
+    <div class="final-title">Reporte Final del Día por Sitio</div>
+    <div class="final-section">
+      <div class="final-section-title">Resumen de Ingresos del Día</div>
+      <table class="final-table">
+        <thead>
+          <tr>
+            <th>Site ID</th>
+            <th>Team Leader</th>
+            <th>Técnicos</th>
+            <th>Estado</th>
+            <th>Avance</th>
+          </tr>
+        </thead>
+        <tbody id="tablaFinalIngresos">
+          <tr>
+            <td>Ejemplo123</td>
+            <td>Juan Pérez</td>
+            <td>Pedro, Ana</td>
+            <td>Completado</td>
+            <td>100%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="final-section final-observaciones">
+      <label for="finalObservaciones">Observaciones Generales del Día:</label>
+      <textarea id="finalObservaciones" placeholder="Observaciones finales..."></textarea>
+    </div>
+    <div class="final-btns">
+      <button class="final-btn" onclick="window.location.href='index.html'">Cerrar Sesión</button>
+      <button class="final-btn" onclick="window.print()">Imprimir Reporte</button>
+    </div>
+  </div>
+  <div class="footer">
+    ©2024 InfraTel Chile. Todos los derechos reservados.
+  </div>
+</body>
+</html>
