@@ -1,63 +1,89 @@
 # InfraTel-Chile
 InfraTel Chile, App Telecomunicaciones
+# Estructura y Navegación de la App Telecomunicaciones
 
-🟢 ¿Quiénes somos?
-InfraTel Chile es una aplicación móvil y web creada para gestionar, monitorear y documentar de forma eficiente el despliegue de infraestructura de telecomunicaciones en terreno. Diseñada para contratistas, operadoras y supervisores, la app permite registrar sitios, validar avances, coordinar cuadrillas y subir documentación clave en tiempo real, todo desde un solo lugar.
+## Estructura de Páginas
 
-🟢 Misión
-Facilitar la operación en terreno y la supervisión técnica de proyectos de telecomunicaciones mediante una app inteligente, segura y adaptable, que conecte a todos los actores del proceso en tiempo real.
+- **index.html**  
+  Página de inicio de sesión (Login).
 
-🟢 Visión
-Convertirnos en la aplicación líder en Chile y LATAM para la gestión digital de infraestructura en telecomunicaciones, elevando los estándares de trazabilidad, coordinación y calidad en la industria.
+- **registro.html**  
+  Formulario de registro de usuario.
 
-🟢 Valores
-Usabilidad y simplicidad
+- **main.html**  
+  Menú principal con acceso a todas las secciones.
 
-Trazabilidad y eficiencia
+- **reportediario.html**  
+  Formulario para ingresar el reporte diario.
 
-Calidad y precisión en cada proceso
+- **nuevo_ingreso.html**  
+  Formulario para registrar un nuevo ingreso.
 
-Adaptabilidad a múltiples clientes y flujos
+- **detalle_ingreso.html**  
+  Visualización y edición de detalles de ingresos.
 
-Confianza y profesionalismo
+- **reportefinaldía.html**  
+  Consulta del reporte final del día.
+
+---
+
+## Comentarios y Flujo de Ingreso a Cada Página
+
+1. **Login (`index.html`)**
+   - Ingresa usuario y contraseña.
+   - Haz clic en **Ingresar**.
+   - Si los datos son correctos, accedes a **main.html** (Menú Principal).
+   - Si no tienes cuenta, haz clic en **Registrarse** para ir a `registro.html`.
+
+2. **Registro (`registro.html`)**
+   - Completa el formulario de registro.
+   - Haz clic en **Registrar** para guardar tus datos.
+   - Haz clic en **Volver a Login** para regresar a `index.html`.
+
+3. **Menú Principal (`main.html`)**
+   - Desde aquí puedes acceder a todas las secciones:
+     - **Reporte Diario**: Botón lleva a `reportediario.html`.
+     - **Nuevo Ingreso**: Botón lleva a `nuevo_ingreso.html`.
+     - **Detalle Ingreso**: Botón lleva a `detalle_ingreso.html`.
+     - **Reporte Final del Día**: Botón lleva a `reportefinaldía.html`.
+   - Botón **Cerrar Sesión** te regresa a `index.html`.
+
+4. **Cualquier Sección**
+   - Todas las páginas de sección tienen un botón **Menú Principal** para volver a `main.html`.
+
+## Resumen del Flujo
+
+- **index.html** (Login)  
+  ↓  
+- **main.html** (Menú Principal)  
+  ↓  
+- Selecciona la sección deseada:  
+  - **reportediario.html**  
+  - **nuevo_ingreso.html**  
+  - **detalle_ingreso.html**  
+  - **reportefinaldía.html**  
+- En cualquier sección, usa **Menú Principal** para volver al menú.
+- Usa **Cerrar Sesión** en el menú para salir y volver al login.
+
+---
+
+**Comentario:**  
+Cada página está enlazada mediante botones. No es necesario escribir la URL manualmente, solo usa los botones de navegación para moverte entre las secciones.
 
 🟢 Características clave de la app
 Registro de sitios de telecomunicaciones con coordenadas, fotos, documentación y responsables.
-
 Panel de avance de obras por sitio (hitos: instalación, ATP, QC, Clean-Up).
-
 Carga de evidencias fotográficas y documentos técnicos desde celular o web.
-
 Gestión de cuadrillas y equipos técnicos por supervisor o empresa.
-
 Alertas y recordatorios de tareas pendientes por sitio o proyecto.
-
 Reportes automáticos en PDF para entregar a clientes.
-
 Sincronización en la nube y funcionamiento offline en zonas sin cobertura.
 
 🟢 Público objetivo
 Empresas contratistas (Huawei, ZTE, Daxa, Experis, Axity)
-
 Operadoras (Entel, Movistar, WOM)
-
 Supervisores de campo
-
 Ingenieros de calidad (QC) y ATP
-
 Gerencias técnicas y clientes finales que exigen documentación y trazabilidad
 
-🟢 Propuesta de valor
-Con InfraTel Chile, las empresas pueden digitalizar el control de sus proyectos en terreno, reducir errores humanos, eliminar el papeleo, y entregar informes claros y consistentes a sus clientes. Una app segura, adaptable y pensada para la industria telecom.
-
-🟢 ¿Qué incluye el lanzamiento?
-App móvil (Android/iOS) y plataforma web de administración
-
-Manual de usuario y formación para equipos
-
-Panel personalizado por cliente (Entel, Huawei, etc.)
-
-Hosting en servidores cloud seguros (AWS, Azure, etc.)
-
-Soporte técnico local
 
