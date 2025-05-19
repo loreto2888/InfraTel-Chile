@@ -1,63 +1,46 @@
-# Telecommunications Report Site
+# Manual de Uso - App Telecomunicaciones
 
-## Overview
-This project is a telecommunications report site that provides users with access to various reports, statistics, and information related to the telecommunications industry. The site includes a secure login feature to ensure that only authorized users can access sensitive data.
+## Ingreso y Flujo Paso a Paso
 
-## Features
-- User authentication with a login form
-- Main page displaying reports and statistics
-- Responsive design with a clean user interface
-- Secure session management
+### 1. Ingresar a la Aplicación
 
-## Project Structure
-```
-telecom-report-site
-├── public
-│   ├── images
-│   │   └── logo.svg
-│   └── index.html
-├── src
-│   ├── components
-│   │   ├── LoginForm.tsx
-│   │   └── MainPage.tsx
-│   ├── styles
-│   │   └── main.css
-│   ├── utils
-│   │   └── auth.ts
-│   └── index.tsx
-├── package.json
-├── tsconfig.json
-└── README.md
-```
+- Abre el archivo `index.html` en tu navegador web.
+- Verás la pantalla de **Login**.
 
-## Installation
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   ```
-2. Navigate to the project directory:
-   ```
-   cd telecom-report-site
-   ```
-3. Install the dependencies:
-   ```
-   npm install
-   ```
+### 2. Login
 
-## Usage
-1. Start the development server:
-   ```
-   npm start
-   ```
-2. Open your browser and navigate to `http://localhost:3000` to view the application.
+- Ingresa tu **usuario** y **contraseña**.
+- Haz clic en el botón **Ingresar**.
+  - Si los datos son correctos, accederás al **Menú Principal**.
+- Si no tienes cuenta, haz clic en **Registrarse** para crear una.
 
-## Security Measures
-- User passwords are securely hashed and stored.
-- Session management is implemented to prevent unauthorized access.
-- Input validation is performed on the login form to mitigate injection attacks.
+### 3. Registro de Usuario
 
-## Contributing
-Contributions are welcome! Please submit a pull request or open an issue for any suggestions or improvements.
+- Completa el formulario con tus datos (Supplier, Supervisor, Nombre, Observación, RUT REAL, ISDP Account, Email, Teléfono, Fecha de nacimiento, Cargo).
+- Haz clic en **Registrar**.
+- Luego, haz clic en **Volver a Login** para regresar a la pantalla de inicio de sesión.
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+### 4. Menú Principal
+
+- Desde el menú puedes acceder a las siguientes páginas:
+  - **Reporte Diario**
+  - **Nuevo Ingreso**
+  - **Detalle Ingreso**
+  - **Reporte Final del Día**
+- Cada opción te lleva al formulario correspondiente.
+- En cada página encontrarás un botón para **volver al Menú Principal**.
+
+### 5. Flujo General
+
+1. **Login** → **Menú Principal**
+2. **Menú Principal** → Selecciona la página que necesitas:
+    - **Reporte Diario**: Completa y guarda el reporte del día.
+    - **Nuevo Ingreso**: Registra un nuevo ingreso de actividad.
+    - **Detalle Ingreso**: Visualiza o edita detalles de ingresos.
+    - **Reporte Final del Día**: Consulta el resumen final.
+3. En cualquier página, usa el botón **Menú Principal** para regresar al menú y navegar a otra sección.
+4. Para cerrar sesión, usa el botón **Cerrar Sesión** en el menú principal.
+
+---
+
+**¡Listo! Así puedes navegar y trabajar en la App Telecomunicaciones paso a paso.**
